@@ -693,7 +693,8 @@ class Drone:
 
 if __name__ == '__main__':
     d = Drone(sim=True)
-    print(d.send('command'))
+    while True:
+        print(d.send(input('> ')))
 ```
 
 ---
